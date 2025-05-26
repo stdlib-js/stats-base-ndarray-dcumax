@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,24 +16,17 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var numelDimension = require( '@stdlib/ndarray-base-numel-dimension' );
-var getStride = require( '@stdlib/ndarray-base-stride' );
-var getOffset = require( '@stdlib/ndarray-base-offset' );
-var getData = require( '@stdlib/ndarray-base-data-buffer' );
-var strided = require( '@stdlib/stats-strided-dcumax' ).ndarray;
-
-
-// MAIN //
+import { float64ndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the cumulative maximum value of a one-dimensional double-precision floating-point ndarray.
 *
-* @param {ArrayLikeObject<Object>} arrays - array-like object containing an input ndarray and an output ndarray
-* @returns {number} maximum value
+* @param arrays - array-like object containing an input ndarray and an output ndarray
+* @returns output ndarray
 *
 * @example
 * var Float64Array = require( '@stdlib/array-float64' );
@@ -44,7 +37,7 @@ var strided = require( '@stdlib/stats-strided-dcumax' ).ndarray;
 * var x = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 *
 * var ybuf = new Float64Array( [ 0.0, 0.0, 0.0, 0.0 ] );
-* var y = new ndarray( 'float64', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var y = new ndarray( 'float64', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 *
 * var v = dcumax( [ x, y ] );
 * // returns <ndarray>
@@ -55,14 +48,9 @@ var strided = require( '@stdlib/stats-strided-dcumax' ).ndarray;
 * var arr = ndarray2array( v );
 * // returns [ 1.0, 3.0, 4.0, 4.0 ]
 */
-function dcumax( arrays ) {
-	var x = arrays[ 0 ];
-	var y = arrays[ 1 ];
-	strided( numelDimension( x, 0 ), getData( x ), getStride( x, 0 ), getOffset( x ), getData( y ), getStride( y, 0 ), getOffset( y ) ); // eslint-disable-line max-len
-	return y;
-}
+declare function dcumax( arrays: [ float64ndarray, float64ndarray ] ): float64ndarray;
 
 
 // EXPORTS //
 
-module.exports = dcumax;
+export = dcumax;
