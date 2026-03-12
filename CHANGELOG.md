@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-03-12)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`9730d28`](https://github.com/stdlib-js/stdlib/commit/9730d28b2aeff0947d2428a0ab01c1580557cbbe) - **bench:** use string interpolation in `stats/base/ndarray/dcumax` [(#10876)](https://github.com/stdlib-js/stdlib/pull/10876) _(by Om-A-osc)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Om-A-osc
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.1">
 
 ## 0.1.1 (2026-02-08)
