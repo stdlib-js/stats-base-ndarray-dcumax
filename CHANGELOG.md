@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-01)
+## Unreleased (2026-04-18)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`d5dc0ec`](https://github.com/stdlib-js/stdlib/commit/d5dc0ec5e07a3490a539f33c9723df8ddcb20ae9) - **docs:** improve doctests for ndarray instances in `stats/base/ndarray/dcumax` [(#11524)](https://github.com/stdlib-js/stdlib/pull/11524) _(by Uday Kakade)_
 -   [`9730d28`](https://github.com/stdlib-js/stdlib/commit/9730d28b2aeff0947d2428a0ab01c1580557cbbe) - **bench:** use string interpolation in `stats/base/ndarray/dcumax` [(#10876)](https://github.com/stdlib-js/stdlib/pull/10876) _(by Om-A-osc)_
 
 </details>
@@ -24,9 +25,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Om-A-osc
+-   Uday Kakade
 
 </section>
 
